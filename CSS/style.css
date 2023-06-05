@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+                
+*{
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Mukta', sans-serif;
+  color: #ded5ff;
+}
+body{
+    background-color: #282828;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.form{
+    padding-top: 1rem;
+    background-color:#838483;
+    border: 2px solid #000000;
+    height: 18rem;
+    width:25rem;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000000;
+}
+.newTask{
+    margin-top: 1rem;
+}
+.form .newTask input{
+    height: 1.8rem;
+    gap: .8rem;
+    color: #000000;
+}
+.form button{
+    background-color: #6e4ae3;
+    width: 6rem;
+    height: 1.8rem;
+    font-size:1rem;
+    font-weight: bold;
+}
+#display{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+#display li{
+    background-color: white;
+    width:16rem;
+    height: 1.5rem;
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#display li label{
+    color: #000000;
+}
+
+#display li button{
+    width:2rem;
+    height:1.4rem;
+    font-size: .7rem;
+}
+
+@media screen and (max-width:300px) {
+    .form{
+        height: 25rem;
+        width:14rem;
+    }
+    .newTask{
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        margin-top: 2rem;
+    }
+
+    .newTask .inputs{
+        width: 12rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .form{
+        height: 25rem;
+        width: 18rem;
+    }
+    .newTask{
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        margin-top: 2rem;
+    }
+
+    .newTask .inputs{
+        width: 12rem;
+    }
+    
+}
